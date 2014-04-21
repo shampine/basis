@@ -28,7 +28,7 @@
         return json;
     })();
 
-    if(!json) {
+    if(json !== null) {
       for(i=0; i < json.length; i++) {
         if(json[i]['hostname'] === hostname) {
           var analytics = json[i]['analytics'];
