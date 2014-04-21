@@ -36,7 +36,7 @@
           
           if(meta !== 'undefined') {
             console.log(meta);
-            document.write('<meta name="google-site-verification" content="' + meta + '" />');
+            $('head').append('<meta name="google-site-verification" content="' + meta + '" />');
           }
 
           if(analytics !== 'undefined') {
