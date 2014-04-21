@@ -48,6 +48,11 @@
       color: #dedede;
       text-decoration: none;
     }
+    @media screen and (max-width: 767px) {
+      #placeholder h1 {
+        font-size: 3em;
+      }
+    }
   </style>
 </head>
 <body>
