@@ -3,16 +3,16 @@ basis
 
 I realized I had a bunch of domains and I don't want them pointing at my providers ad filled landing pages.
 
-Just a 1 page, with only cdn loaded resources.
+Just a single page, with only cdn loaded resources.
 
 
 ### features
 
-Lightweight with only jQuery & Open Sans web font out of the box - although Bootstrap and Font Awesome are commented out, if they are so desired.
+Lightweight with only jQuery & Open Sans Google web font out of the box - although Bootstrap and Font Awesome are commented out, if they are so desired.
 
 Built to be minimalist, single files, with an additional `sites.json` file for multiple sites.
 
-Default htacess removes www and redirects to non-www version of the site.
+Default htaccess removes www and redirects to non-www version of the site.
 
 ### multi-site usage
 
