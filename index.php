@@ -51,8 +51,6 @@
             ga('send', 'pageview');
           }
 
-        } else {
-          console.log('No site matches found, no tracking/meta data will be inserted.')
         }
       }
     } else {
