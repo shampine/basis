@@ -110,7 +110,7 @@
 <body>
   <section id="placeholder">
     <h1>Soon. I hope.</h1>
-    <a href="http://patrickshampine.com">(¯\_(ツ)_/¯)</a>
+    <a href="http://patrickshampine.com">¯\_(ツ)_/¯</a>
   </section>
 </body>
 </html>
