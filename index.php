@@ -71,7 +71,6 @@
       height: 100%;
       -webkit-transition: all .3s ease-in-out;
       -moz-transition: all .3s ease-in-out;
-      -o-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out;
       color: #fff;
       background: #405d8c;
