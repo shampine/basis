@@ -4,7 +4,14 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="robots" content="noindex,nofollow">
-  <title>Coming soon?</title>
+  <title>Coming soon?</title><?php
+  $json = file_get_contents('sites.json');
+  $json = json_decode($json);
+  foreach($json as $site) {
+    if($site->hostname === $_SERVER['HTTP_HOST']) {
+      echo '<meta name="google-site-verification" content="'.$site->meta.'"/>';
+    }
+  } ?>
   <meta name="description" content="It's only temporary, we hope.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
@@ -32,12 +39,6 @@
       for(i=0; i < json.length; i++) {
         if(json[i]['hostname'] === hostname) {
           var analytics = json[i]['analytics'];
-          var meta = json[i]['meta'];
-          
-          if(meta !== 'undefined') {
-            console.log(meta);
-            $('head').append('<meta name="google-site-verification" content="' + meta + '" />');
-          }
 
           if(analytics !== 'undefined') {
             console.log(analytics);
