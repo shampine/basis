@@ -20,7 +20,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>
     var hostname = window.location.hostname;
-
+    console.log(hostname);
     var json = (function() {
         var json = null;
         $.ajax({
